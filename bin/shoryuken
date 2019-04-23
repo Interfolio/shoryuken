@@ -17,7 +17,7 @@ module Shoryuken
       desc 'start', 'Starts shoryuken'
       method_option :concurrency, aliases: '-c', type: :numeric, desc: 'Processor threads to use'
       method_option :daemon,      aliases: '-d', type: :boolean, desc: 'Daemonize process'
-      method_option :queues,      aliases: '-q', type: :array,   desc: 'Queues to process with optional weights'
+      method_option :queues,      aliases: ['-q', '--queue'], type: :array,   desc: 'Queues to process with optional weights'
       method_option :require,     aliases: '-r', type: :string,  desc: 'Dir or path of the workers'
       method_option :timeout,     aliases: '-t', type: :numeric, desc: 'Hard shutdown timeout'
       method_option :config,      aliases: '-C', type: :string,  desc: 'Path to config file'
